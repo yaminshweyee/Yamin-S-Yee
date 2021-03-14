@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1
+    style="text-align:center" >Engineering Projects and Experiences</h1>
+    <meta name  ="viewpoint"
+        content ="width=device-width, initial-scale=1"
+    >
+    <style>
+
+        /* Style for Image */
+        .img1 {
+            float: right;
+            border: none;
+            margin: auto;
+        }
+
+         /* Style for Image */
+         .img2 {
+            float: left;
+            border: none;
+            margin: auto;
+        }
+
+        .container{
+            position: relative;
+            font-family: 'Times New Roman';
+        }
+
+        .text-block{
+            position: absolute;
+            bottom: 86px;
+            right: 20px;
+            background-color: #ccc;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .text-block1{
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            background-color: rgb(243, 87, 139);
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        *{box-sizing: border-box
+        }
+        body {font-family:"Georgia";}
+
+        /* Style the tab*/
+        .tab{
+            float:left;
+            border: 1px solid rgb(255, 201, 66);
+            background-color: rgb(255, 201, 66);
+            width: 30%;
+            height: cover;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button{
+            display: block;
+            background-color: rgb(235, 213, 137);
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /*Change background color of buttons on hover*/
+        .tab button:hover{
+            background-color: blanchedalmond;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active{
+            background-color: rgb(240, 188, 46);
+        }
+
+        /* Style the tab content */
+        .tabcontent{
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(255, 249, 227);">
+<p> Click on the buttons inside the tabbed menus:</p>
+
+<div class="tab" style="border-color: pink;">
+    <button class="tablinks" style="border-color: pink;"
+    onclick="openCity(event,'Projects',)" id="defaultOpen">
+    Projects</button>
+    <button class="tablinks" style="border-color: pink;"
+    onclick="openCity(event,'Experiences')" id="defaultOpen">
+    Experiences</button>
+    <button class="tablinks" style="border-color: pink;"
+    onclick="openCity(event,'Resume')" id="defaultOpen">
+    Resume</button>
+    <button class="tablinks" style="border-color: pink;"
+    onclick="openCity(event,'Home')" id="defaultOpen"><a href="welcome.html">Home</a></button>
+    <button class="tablinks" style="border-color: pink;"
+    onclick="openCity(event,'About Yamin')" id="defaultOpen"><a href="about_yamin.html">About Yamin</a></button>
+</div>
+
+<div id="Projects" class="tabcontent">
+    <div calss="container">
+        <img src="eng.jpg" alt="Engineering Project"
+        style="width:100%">
+    <div class="text-block">
+        <h4>Engineering Projects</h4>
+        <p>Failure is the opportunity to begin again more intelligently</p>
+    </div>
+    </div>
+    <hr>
+    <h2>Blue Jay - Food Spy</h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img1" src="BJ1.PNG" style="width:400px;">
+        <h6 style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: medium;">
+        Description:
+        </h6>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        People are busy (especially college students)! In today’s world, people often have to juggle around multiple responsibilities at once: work, social life, and the dreaded bills. Food expiration 
+        and the state of one’s fridge often falls by the wayside, assuming 
+        that they’ll work without fault. Unfortunately, this isn’t always the case: 
+        sometimes the power gets cut, other times multiple food items are already expired long before 
+        someone can have the time to go through each item and check for spoilage.
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            That’s where we come in. We want to make it easier to quickly check the contents of the fridge, even when on the go!
+        </p>
+
+        <iframe
+        src="FRBJ.pdf"
+        width="100%" height="900px">
+        </iframe>
+    </p>
+    <hr>
+    <hr>
+    <h2>System on Chip Specification</h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img1" src="SC.PNG" style="width:400px;">
+        <h6 style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: medium;">
+        Description:
+        </h6>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            The Top Level is the connection between two things, the Core
+            and the TSI. The Core consists of the design itself, while TSI contains all
+            references to the target technology libraries. Any communication from the core’s
+            I/O’s must pass through the TSI before interacting with the FPGA.
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            The functionalities of both of Transmit Engine and Receive
+            Engine of the UART. The Transmit Engine was verified when the
+            statement is consistently printed on a Serial Terminal. Next the
+            Receive Engine was verified when it was able to take in a user
+            inputted character and transmit directly to the terminal. The design
+            was also able to detect parity errors, framing errors, and overflow
+            errors in case the transmission of data from one machine to the next
+            was not correct. Additionally, the TramelBlaze was able to service the
+            correct engine based on the Port ID’s.           
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            MIB was created to give the TramelBlaze access to the
+            on-board Micron Memory. Alongside with the Full UART, the Tramel
+            Blaze should be able to take in data from Serial Terminal and write
+            those characters into a location in memory. Once an asterisk is
+            received by the Receive Engine, the data in the memory will then be
+            read by the Tramel Blaze and output to the Serial Terminal. 
+        </p>
+
+        <iframe
+        src="scy.pdf"
+        width="100%" height="900px">
+    </iframe>
+    <hr>
+    <hr>
+    <h2>Single Cycle MIPS Processor</h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img1" src="scm.PNG" style="width:400px;">
+        <h6 style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: medium;">
+        Description:
+        </h6>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            The single cycle processor’s instruction execution starts by using the counter to apply the instruction address to the instruction memory.
+             After the instruction is fetched,  the register operands used by an instruction address to the instruction memory. 
+             After the instruction is fetched, the register operands used by an instruction are specified 
+             by the fields of that instruction. Once the operands have been fetched, 
+             they can operate on to the compute a memory address and equality check. 
+             The result for the ALU must be written to a register as well. 
+             If the operation is load or store, the result of ALU is used as an address to either store a value from the registers or load a value from memory 
+             into the registers. The result from the ALU or memory is written back into the register file. 
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            Under the Single Cycle Processor, there are controls signals which are also the inputs, under this project I use the name as RegWrite, ALUSrc, MemWrite, MemtoReg, MemRead which are controlled by the control but since we are not working on 
+            control module yet in this project. The given top level is the top level we are given to implement.
+        </p>
+        <iframe
+        src="SCP.pdf"
+        width="100%" height="900px">
+        </iframe>
+        <hr>
+        <hr>
+        <h2>Clock Wise Pixel Neon Table Display </h2>
+        <p>
+        <iframe width="560" height="315" float="left" src="https://www.youtube.com/embed/1NM4SX9T7E0" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+        <h6 style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: medium;">
+            Description:
+        </h6>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            I personally crated this clock wise travelling pixel neon table display for one of the organizations I was in last Spring 2109. I came up with idea since I love neon light and also love decorating for home and so I feel like creating a travel display neon light 
+            in clock wise with different color makes the home and room more. I love it since it came out as I expected . 
+        </p>
+    </p>
+    <hr>
+    <hr>
+    <h2>UART and Bluetooth</h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img2" src="bluetooth.png" style="width:200px;">
+        <h6 style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: medium;">
+        Description:
+        </h6>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            The goal of this project was to control the frequency of a sine wave and the
+            brightness of an LED by sending Bluetooth commands via a Bluetooth terminal app on
+            an Android device. Two TM4C Launchpads were utilized; one to handle the commands
+            received via Bluetooth and the other to update the sine wave frequency or the LED
+            brightness. The sine wave will be produced using the same hardware and logic from the
+            previous project.
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            The user will interface will the microcontrollers using a Bluetooth terminal app on
+            an Android device. Once the HC-05 module and the terminal app are connected, the
+            user can then send commands to change the sine wave frequency or LED brightness.
+            For the sine wave frequency, the user must first type an ‘f’, then follow it with a value
+            from 262 to 494. To change the brightness, the user must first type a ‘b’, then follow it
+            with a value from 0-255. When this data is sent, it will have the ASCII value for carriage
+            return attached to it for the microcontroller to properly identify the end of the command.
+            Once the microcontroller receives the data, it checks to make sure the value is within
+            the specified range, otherwise it will not update the frequency or brightness. If the value
+            is within the range, the first microcontroller will send the data to the microcontroller
+            responsible for changing the frequency and brightness. The user will then be able to
+            see the new sine wave frequency on an oscilloscope or the changed LED on the
+            second microcontroller
+        </p>
+        <iframe
+        src="Bluetooth.pdf"
+        width="100%" height="900px">
+        </iframe>
+        <hr>
+        <p style="text-align: center; font-size: smaller; font-family: Georgia; color: rgb(168, 77, 105);;">
+            @2021 Yamin-Yee. All Rights Reserved             
+        </p>
+        <hr style="color: rgb(165, 31, 54);">
+</div>
+
+<div id="Experiences" class="tabcontent">
+    <div calss="container">
+        <img src="women.jpg" alt="Woman In Engineering"
+        style="width:100%">
+    <div class="text-block1">
+        <h4>Woman In Engineering</h4>
+        <p>You should never limit your dreams and abiliities as a woman in STEM</p>
+    </div>
+    </div>
+
+    <hr>
+    <h2 style="font-family: 'Times New Roman';color: rgb(179, 36, 79);">Experiences as Woman in Engineering</h2>
+    <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        I feel like as a woman in STEM, you should never limit your ablities because of other people are saying so.
+        You should always follow your dreams no matter how hard it takes. 
+        I had so many Experiences in my life that teah me how to become a better me. 
+        You should never live in the past but you should always compete with yourself. 
+        Where you were before and you are right now is a big difference. 
+        You shoud never compare yourself with others because we all have different life paths, backgrounds, and dreams. 
+        You are the only one who should always compare yourself and at the same time, don't harsh on yourself too much.
+        If there were mistakes, you should learn from them and move on. Keep going and never give up! 
+    </p>
+    <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        I have several Leadership Experiences and some of them make me grow a lot as a person. 
+        Some of them teach me how to handle people and how to work in team and communicate. 
+        I feel like it is always important to involve outside of classes.
+        It will help you to meet with so many people with different backgrounds.
+        It will make you think outside of the box.  
+    </p>
+    <h3 style="color:rgb(88, 7, 68);font-family: 'Times New Roman';text-align: center;">
+    Never Lose Hope! Never Stop Working! Never Stop Planning! Never Stop Dreaming! Be Bold! Be Kind! Be a Hardworker! 
+    </h3>
+    <p style="color:rgb(105, 6, 84);font-family: 'Times New Roman';font-size: medium;text-align: center;">
+        -Yamin Yee
+    </p>
+    <hr>
+    <h2 style="font-family: 'Times New Roman';color: rgb(179, 36, 79);">
+    President, Associated Engineering Student Body 
+    </h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img2" src="aesb.png" style="width:200px;">
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            Associated Engineering Student Body( AESB ) is the College Council of the College of Engineering here at California State University, Long Beach. AESB is the largest Associated Student Body at CSULB which associated with more than 20 organizations. AESB advises the COE Dean of its recommendations on matters concerning the general welfare of the COE students. AESB is also a liaison between 
+            the COE administration, faculty, recognized student organizations, and members of the COE student body.
+        </p>
+        <img src="officers.png" alt="Woman In Engineering"
+        style="width:60%; left: 40px;position: relative;">
+    <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        I served as President of Engineering Student Council from 2019-2020 school year. 
+        I facilitated high level communication to Engineering organizations as well as Student Body at California State University, Long Beach
+        and oversaw the Executive Board and all Engineering organizations as well as all tasks within College of Engineering and Engineering Student Body.
+        I also had to schedule and preside over both General Body and executive meetings, and 
+        review the constitution and bylaws and appoint executive officers, Student Government Senators, and other leadership positions.  
+    </p>
+    <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        Achievement : Hosted the Engineering Welcome Week at the beginning of Fall 2019 / Engineering Student Council Award 2019.
+    </p>
+    <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        Hosted E-Week 2020 - Highlighted with Industry Night with my industry chairs
+    </p>
+    <hr>
+    <h2 style="font-family: 'Times New Roman';color: rgb(179, 36, 79);">
+        FY21 Leadership Developement Member & Vice President, Society of Women Engineers(SWE)
+    </h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img1" src="SWE-Logo.png" style="width:200px;">
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            For more than six decades, SWE has given women engineers a unique place and voice within the engineering industry. 
+            The organization is centered around a passion for our members' success and continues to evolve with the challenges
+            and opportunities reflected in today's exciting engineering and technology specialties.
+        </p>
+        <img src="swe.jpg" alt="Woman In Engineering"
+        style="width:40%; left: 150px; position: relative;">
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        I served as Vice President of SWE at CSULB chapter from 2019-2020 school year. 
+        I assumed all the responsibilities of the President when she is unaviliable. 
+        I also had to serve a liaison between the Executive Council and the general membership.
+        I attended Executive Counicl Meeting and introduce new members to the section and 
+        also recruited speakers to fill meeting schedule beyond employers.
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        If you are women in engineering and interested to be part of SWE, please check out the SWE Link as following: 
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;text-decoration: solid;text-align: center;">
+            <a style="color:rgb(207, 72, 72); text-align: center;"
+            href="https://swe.org/" target="_blank">Soceity of Women Engineers</a>
+        </p>
+    <hr>
+    <h2 style="font-family: 'Times New Roman';color: rgb(179, 36, 79);">
+        Senator of College of Engineering, ASI Students Government CSULB
+    </h2>
+    <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+        <img class="img2" src="asi.png" style="width:200px;">
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            Committed to the principle of student self-determination in the shared governance of the university, 
+            the Associated Students of California State University, Long Beach seeks to facilitate the achievement 
+            of students’ educational objectives and life goals through programs, services, and facilities that advocate 
+            student needs and interests, compel student representation in campus decision-making, and provide students with 
+            the resources that they identify as necessary for their intellectual, social, and physical development.
+        </p>
+        <img src="Senate.PNG" alt="Woman In Engineering"
+        style="width:80%; left: 150px; position: relative;">
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+        I served as Sentor of College of Engineering at Student Government and I served there from 
+        2018-2019 school year. I had great experiences there by meeting with many other leaders with different backgrounds
+        and some of them even taught me how to become a better leader in future. I represent as student leader of College of Engineering.
+        I wrote resolution with other college senators for whole CSULB campus and researched what 
+        College of Engineering students want and need and also met with Dean of College of Engineering and discuss 
+        improve change, situations under COE and etc 
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            Achievements
+            - Senator Of Week on the week of February 6
+            - Recognition of Long Beach Mayor Certification
+        </p>
+        <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;text-decoration: solid;text-align: center;">
+            <a style="color:rgb(207, 72, 72); text-align: center;"
+            href="https://www.asicsulb.org/gov/" target="_blank">ASI Student Govermnet CSULB</a>
+        </p>
+        <hr>
+        <h2 style="font-family: 'Times New Roman';color: rgb(179, 36, 79);">
+            Public Relation Chair, Society of Asian Scientists and Engineers
+        </h2>
+        <p style="color:rgb(8, 8, 83);font-family:'Times New Roman';font-size: large;">
+            <img class="img1" src="sase logo - 2-color - vertical.png" style="width:200px;">
+            <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+                SASE is dedicated to the advancement of Asian heritage scientists and engineers in education and 
+                employment so that they can achieve their full career potential. In addition to professional development, 
+                SASE also encourages members to contribute to the enhancement of the communities in which they live.
+            </p>
+            <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+                SASE’s mission is to:
+            </p>
+            <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+                Prepare Asian heritage scientists and engineers for success in the global business world.
+                Celebrate diversity on campuses and in the workplace.
+                Provide opportunities for members to make contributions to their local communities.
+            </p>
+            <img src="SASE.jpg" alt="Woman In Engineering"
+            style="width:80%; left: 40px; position: relative;">
+            <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;">
+            I served as PR at SASE during Fall 2018 and SASE was my really first organization which taugh me more about Professionalism 
+            and engineering and I could able to meet great mentors who could help me to grow as leader. I had to created serveral 
+            event flyers and even I had to created the logo of SASE as CSULB chapter. I could get a chance to attended the National and Regional 
+            Conferences of SASE and I could even able to get a chance to see the CEO of Boeing at National Conference. 
+            </p>
+            <p style="color:rgb(8, 8, 83);font-family: 'Times New Roman';font-size: large;text-decoration: solid;text-align: center;">
+                <a style="color:rgb(207, 72, 72); text-align: center;"
+                href="https://www.saseconnect.org/about-sase" target="_blank">Society of Asian Scientists and Engineers</a>
+            </p>
+            <hr>
+            <p style="text-align: center; font-size: smaller; font-family: Georgia; color: rgb(168, 77, 105);;">
+                @2021 Yamin-Yee. All Rights Reserved             
+            </p>
+            <hr style="color: rgb(165, 31, 54);">
+</div>
+
+<div id="Resume" class="tabcontent">
+    <iframe
+        src="Resume.pdf"
+        width="100%" height="900px">
+        </iframe>
+        <hr>
+        <p style="text-align: center; font-size: smaller; font-family: Georgia; color: rgb(168, 77, 105);;">
+            @2021 Yamin-Yee. All Rights Reserved             
+        </p>
+        <hr style="color: rgb(165, 31, 54);">
+</div>
+
+<div id="Home" class="tabcontent">
+    <a href="welcome.html">
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+
+
+
+
+
+
+</html>
